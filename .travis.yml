@@ -13,7 +13,7 @@ services:
 
 install:
   - if [ -f ./${TYPE}/build/${VARIANT} ]; then `cat ./${TYPE}/build/${VARIANT}`; fi
-  - docker build -t iwyg/${TYPE}${VARIANT} -f ./${TYPE}/${VARIANT} ./${TYPE}
+  - docker build -t iwyg/${TYPE}:${VARIANT} -f ./${TYPE}/${VARIANT} ./${TYPE}
 
 script:
   - ./${TYPE}/${TYPE}${VARIANT}-test

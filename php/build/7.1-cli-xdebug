@@ -1,1 +1,1 @@
-docker build -t iwyg/php7.1-cli -f ./php/7.1-cli ./php
+docker build -t iwyg/php:7.1-cli -f ./php/7.1-cli ./php

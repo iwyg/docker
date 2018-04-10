@@ -1,1 +1,1 @@
-docker build -t iwyg/php7.1-fpm -f ./php/7.1-fpm ./php
+docker build -t iwyg/php:7.1-fpm -f ./php/7.1-fpm ./php
