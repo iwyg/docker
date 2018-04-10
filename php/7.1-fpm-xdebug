@@ -1,4 +1,4 @@
-FROM iwyg/php71-fpm:latest
+FROM iwyg/php71-fpm
 
 ENV PHP_XDEBUG_VERSION master
 ENV XDEBUG_HOST=172.17.0.1
