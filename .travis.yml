@@ -1,10 +1,10 @@
 sudo: required
 
 env:
-  - TYPE=php VARIANT=cli-7.1
-  - TYPE=php VARIANT=cli-7.1-xdebug
-  - TYPE=php VARIANT=fpm-7.1
-  - TYPE=php VARIANT=fpm-7.1-xdebug
+  - TYPE=php VARIANT=7.1-cli
+  - TYPE=php VARIANT=7.1-cli-xdebug
+  - TYPE=php VARIANT=7.1-fpm
+  - TYPE=php VARIANT=7.1-fpm-xdebug
   - TYPE=nodejs VARIANT=9.11-yarn
 
 services:
