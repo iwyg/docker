@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 EXTENSIONS=`cat ./php/php7.1-extensions | xargs`
 INSTALLED=`docker run -i iwyg/php:7.1-fpm php -m | grep -E "^\w+" | xargs`
