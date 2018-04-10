@@ -16,4 +16,4 @@ install:
   - docker build -t iwyg/${TYPE}:${VARIANT} -f ./${TYPE}/${VARIANT} ./${TYPE}
 
 script:
-  - ./${TYPE}/${TYPE}${VARIANT}-test
+  - ./${TYPE}/${VARIANT}-test
