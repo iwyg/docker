@@ -1,6 +1,6 @@
 #!/bin/sh
 
-EXTENSIONS=`cat php7.1-extensions | xargs`
+EXTENSIONS=`cat ./php/php7.1-extensions | xargs`
 INSTALLED=`docker run -i iwyg/php:7.1-cli php -m | grep -E "^\w+" | xargs`
 
 for EXT in $EXTENSIONS; do
