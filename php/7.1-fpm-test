@@ -4,7 +4,8 @@ EXTENSIONS=`cat ./php/php7.1-extensions | xargs`
 INSTALLED=`docker run -i iwyg/php:7.1-fpm php -m | grep -E "^\w+" | xargs`
 
 for EXT in $EXTENSIONS; do
-    if [[ $INSTALLED =~ (^|[[:space:]])$EXT($|[[:space:]]) ]]; then
+    if [[ " $INSTALLED " =~ .*\ $EXT\ .* ]]; then
+    #if [[ $INSTALLED =~ (^|[[:space:]])$EXT($|[[:space:]]) ]]; then
         continue
     fi
     echo "$EXT not installed"
