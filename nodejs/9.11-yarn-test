@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ `docker run iwyg/nodejs9.11-yarn which yarn` != '/usr/local/bin/yarn' ]; then
+    echo "yarn not installed"
+    exit 1
+fi
+
+echo "done"
+exit 0

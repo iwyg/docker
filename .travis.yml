@@ -1,0 +1,17 @@
+sudo: required
+
+env:
+  - TYPE=php VARIANT=cli-7.1
+  - TYPE=php VARIANT=cli-7.1-xdebug
+  - TYPE=php VARIANT=fpm-7.1
+  - TYPE=php VARIANT=fpm-7.1-xdebug
+  - TYPE=nodejs VARIANT=9.11-yarn
+
+services:
+  - docker
+
+install:
+  - docker build -t iwyg/${TYPE}${VARIANT} -f ./${TYPE}/${VARIANT} ./${TYPE}
+
+script:
+  - ./${TYPE}${VARIANT}-test

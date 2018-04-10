@@ -1,0 +1,15 @@
+#!/bin/sh
+
+EXTENSIONS="xdebug"
+INSTALLED=`docker run -i iwyg/php71-cli-xdebug:latest php -m | grep -E "^\w+" | xargs`
+
+for EXT in $EXTENSIONS; do
+    if [[ $INSTALLED =~ (^|[[:space:]])$EXT($|[[:space:]]) ]]; then
+        continue
+    fi
+    echo "$EXT not installed"
+    exit 1
+done
+
+echo "done"
+exit 0
