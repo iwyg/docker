@@ -1,6 +1,6 @@
 # Docker images for php, nodejs, etc.
 
-[![Build Status](https://travis-ci.org/iwyg/docker.svg?branch=development)](https://travis-ci.org/iwyg/docker)
+[![Build Status](https://travis-ci.org/iwyg/docker.svg?branch=master)](https://travis-ci.org/iwyg/docker)
 
 ## PHP
 
