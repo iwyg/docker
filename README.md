@@ -128,8 +128,8 @@ Extensions:
 
 ## Nodejs
 
-### 9.1.11-yarn
+### 9.11-yarn
 
-Image based on the official [node:9.11.1-alpine](https://hub.docker.com/_/node/) image
+Image based on the official [node:9.11-alpine](https://hub.docker.com/_/node/) image
 
 This image packs in [yarn](https://yarnpkg.com) as node package manager.
